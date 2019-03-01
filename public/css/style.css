@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.btn-secondary {
+  background-color: rgb(104, 96, 96);
+  color: #92bee5;
+}
+
+h3 {
+  color: #337ab7;
+}
+
+.home-card
+{
+  background-color: #d2e6d7;
+  min-width: 600px;
+  min-height: 200px;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.home-card a {
+  color: white;
+}
+
+h1.home-page {
+  font-size: 65px;
+  color: #278a7d;
+  /* margin-top: 10px; */
+}
+
+
+
+
+.reg-link {
+ 
+  font-weight: bold;
+  font-size: 15px;
+  color: #337ab7;
+
+}
+
+.reg-link span {
+  margin-left: 190px;
+}
+
+.logo {
+      width: 120px;
+      margin: auto;
+  }
