@@ -1,9 +1,8 @@
-const MongoClient = require('mongodb').MongoClient;
+// const MongoClient = require('mongodb').MongoClient;
 
 if (process.env.NODE_ENV === 'production') {
     module.exports = {
-        mongoURI: `mongodb://mgad:il0veallah@mycluster-shard-00-00-e2mph.mongodb.net:27017,mycluster-shard-00-01-e2mph.mongodb.net:27017,mycluster-shard-00-02-e2mph.mongodb.net:27017/test?ssl=true&replicaSet=myCluster-shard-0&authSource=admin&retryWrites=true`,
-        secretOrkey: 'secret'
+        mongoURI: 'mongodb+srv://mgad:il0veallah@mycluster-e2mph.mongodb.net/test?retryWrites=true'
     }
 } else {
     module.exports = {
@@ -11,4 +10,16 @@ if (process.env.NODE_ENV === 'production') {
     }
 }
 
+
+
+// const MongoClient = require('mongodb').MongoClient;
+// module.exports.mongoURI = () => {
+//     const uri = "mongodb+srv://mgad:il0veallah@mycluster-e2mph.mongodb.net/test?retryWrites=true";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
+// }
 
